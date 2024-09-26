@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8071D2"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewPeopleInParty"
+        android:layout_width="149dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="People in Party"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/textViewTipAppOpen"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#330072"
+        android:gravity="center"
+        android:text="TipApp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBillTotal"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Bill Total:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTipAppOpen"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewTipPrecent"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Tip %:"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/textViewTotalDue"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Total:"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipAmount" />
+
+    <TextView
+        android:id="@+id/textViewTipAmount"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Tip:"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+    <TextView
+        android:id="@+id/textViewPerPerson"
+        android:layout_width="149dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Per Person"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalTotalPerPerson"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="148dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewPerPerson"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalTotalDue"
+        android:layout_width="219dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimalTipAmount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalBillTotal"
+        android:layout_width="219dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewBillTotal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipAppOpen" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimalTipAmount"
+        android:layout_width="219dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+    <EditText
+        android:id="@+id/editTextNumberTipPrecent"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <EditText
+        android:id="@+id/editTextNumberPeopleinParty"
+        android:layout_width="178dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:text="15%"
+        android:onClick="Tip15"
+        app:layout_constraintEnd_toStartOf="@+id/button20"
+        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:text="20%"
+        android:onClick="Tip20"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPlusTip"
+        app:layout_constraintStart_toEndOf="@+id/button15"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:text="10%"
+        android:onClick="Tip10"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintStart_toEndOf="@+id/buttonMinusTip"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <Button
+        android:id="@+id/buttonPlusTip"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:onClick="IncreaseTip"
+        android:text="+"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <Button
+        android:id="@+id/buttonMinusTip"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:onClick="DecreaseTip"
+        android:text="-"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <Button
+        android:id="@+id/buttonMinusPeople"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:gravity="center"
+        android:text="-"
+        android:onClick="DecreasePeople"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <Button
+        android:id="@+id/buttonPlusPeople"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="+"
+        android:onClick="IncreasePeople"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTipAppOpen" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="132dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="344dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+    <SeekBar
+        android:id="@+id/seekBarTipBar"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="20"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#000000"
+        android:thumbTint="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberTipPrecent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTipPrecent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
